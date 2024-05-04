@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+    padding: 0px 4px;
+    margin: 4px 0px;
+}
+
+:root {
+    --color-1: #efeeee;
+    --color-2: #000000;
+    --color-3: #ffffff;
+}
+
+
+.dark-theme {
+    --color-1: #000000;
+    --color-2: #ffffff;
+    --color-3: #282828;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: var(--color-1);
+    color: var(--color-2);
+}
+
+.header {
+    background-color: var(--color-3);
+    color: var(--color-2);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    position: fixed;
+    width: 97%;
+    z-index: 1;
+}
+
+.header div h2 {
+    font-size: 20px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+img {
+    height: 280px;
+    width: 55%;
+    object-fit: cover;
+}
+
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    background-color: var(--color-1);
+    width: 100%;
+    padding: 12px 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightcolumn-fakeimg {
+    background-color: var(--color-1);
+    width: 100%;
+    padding: 4px 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fakeimg p {
+    background-color: var(--color-1);
+    width: 40%;
+}
+
+.card {
+    background-color: var(--color-3);
+    padding: 4px 20px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--color-2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.rightcolumn-img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+
+}
+
+.rightcolumn-img2 {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
